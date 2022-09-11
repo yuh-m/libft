@@ -6,7 +6,7 @@
 /*   By: eryudi-m <eryudi-m@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 23:57:49 by eryudi-m          #+#    #+#             */
-/*   Updated: 2022/09/11 18:22:43 by eryudi-m         ###   ########.fr       */
+/*   Updated: 2022/09/11 19:15:01 by eryudi-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdarg.h>
+
+# define MAX_FD 1024
+# define BUFFER_SIZE 1024
+
 
 /**
 * @brief The isalpha() function checks whether a character is an alphabet or not.
@@ -353,5 +358,44 @@ void	ft_putendl_fd(char *s, int fd);
 * @return void
 */
 void	ft_putnbr_fd(int n, int fd);
+
+
+// GNL project //
+
+/**
+* @brief Reads a fd and get the string till a new line is found
+* @param fd: The file descriptor on which to write.
+* @return a string
+*/
+char	*get_next_line(int fd);
+
+//printf project //
+
+/**
+* @brief Return the lenght of an unsigned number
+* @param number: unsigned number
+* @return int
+*/
+int	len_unsigned(unsigned int number);
+
+/**
+* @brief Transfrom a number to a string following the base change
+* @param number: unsigned number
+* @param base: base number to transform (eg. 012345689)
+* @return char *
+*/
+char	*ft_itoa_base(unsigned long long number, char *base)
+
+/**
+* @brief it works similar as the printf passing the format and value to display on screen
+* @return int: number of char printed
+*/
+int		ft_printf(const char *format, ...);
+int		ft_print_char(char chr);
+int		ft_print_string(char *chr);
+int		ft_print_integer(int number);
+int		ft_print_unsigned_int(unsigned int number);
+int		ft_print_pointer(void *pointer);
+int		ft_print_x(unsigned int number, char specifier);
 
 #endif

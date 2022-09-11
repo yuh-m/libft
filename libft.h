@@ -6,7 +6,7 @@
 /*   By: eryudi-m <eryudi-m@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 23:57:49 by eryudi-m          #+#    #+#             */
-/*   Updated: 2022/09/11 19:26:57 by eryudi-m         ###   ########.fr       */
+/*   Updated: 2022/09/11 19:39:56 by eryudi-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -373,7 +373,7 @@ char	*get_next_line(int fd);
 * @param number: unsigned number
 * @return int
 */
-int		len_unsigned(unsigned int number);
+int		ft_len_unsigned(unsigned int number);
 
 /**
 * @brief Transfrom a number to a string following the base change
@@ -396,5 +396,7 @@ int		ft_print_unsigned_int(unsigned int number);
 int		ft_print_pointer(void *pointer);
 
 int		ft_print_x(unsigned int number, char specifier);
+
+void	ft_putnbr_unsig(unsigned int u, int fd);
 
 #endif

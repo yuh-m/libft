@@ -6,11 +6,11 @@
 /*   By: eryudi-m <eryudi-m@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 16:39:23 by eryudi-m          #+#    #+#             */
-/*   Updated: 2022/08/06 21:26:13 by eryudi-m         ###   ########.fr       */
+/*   Updated: 2022/09/11 19:36:53 by eryudi-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../include/ft_printf.h"
+#include "libft.h"
 
 int	ft_print_pointer(void *pointer)
 {

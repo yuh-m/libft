@@ -6,7 +6,7 @@
 /*   By: eryudi-m <eryudi-m@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 23:57:49 by eryudi-m          #+#    #+#             */
-/*   Updated: 2022/09/11 19:39:56 by eryudi-m         ###   ########.fr       */
+/*   Updated: 2022/12/04 00:04:41 by eryudi-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -383,20 +383,94 @@ int		ft_len_unsigned(unsigned int number);
 */
 char	*ft_itoa_base(unsigned long long number, char *base);
 
+/**
+* @brief print on terminal a set of charathers
+* @return number of bytes/char printed
+*/
 int		ft_printf(const char *format, ...);
 
+/**
+* @brief print on terminal a set of charathers
+* @return number of bytes/char printed
+*/
 int		ft_print_char(char chr);
 
+/**
+* @brief print on terminal a set of charathers
+* @return number of bytes/char printed
+*/
 int		ft_print_string(char *chr);
 
+/**
+* @brief print on terminal a set of charathers
+* @return number of bytes/char printed
+*/
 int		ft_print_integer(int number);
 
+/**
+* @brief print on terminal a set of charathers
+* @return number of bytes/char printed
+*/
 int		ft_print_unsigned_int(unsigned int number);
 
+/**
+* @brief print on terminal a set of charathers
+* @return number of bytes/char printed
+*/
 int		ft_print_pointer(void *pointer);
 
+/**
+* @brief print on terminal a hexadecimal number
+* @return number of bytes/char printed
+*/
 int		ft_print_x(unsigned int number, char specifier);
 
+/**
+* @brief write on fd an unsgined integer
+* @return void
+*/
 void	ft_putnbr_unsig(unsigned int u, int fd);
+
+/**
+* @brief print on the fd a set of charathers
+* @return number of bytes/char printed
+*/
+int		ft_fprintf(int fd, const char *format, ...);
+
+/**
+* @brief print on fd a set of charathers
+* @return number of bytes/char printed
+*/
+int		ft_fprint_char(int fd, char chr);
+
+/**
+* @brief print on terminal a set of charathers
+* @return number of bytes/char printed
+*/
+int		ft_fprint_string(int fd, char *chr);
+
+/**
+* @brief print on terminal a set of charathers
+* @return number of bytes/char printed
+*/
+int		ft_fprint_integer(int number);
+
+/**
+* @brief print on terminal a set of charathers
+* @return number of bytes/char printed
+*/
+int		ft_fprint_unsigned_int(int fd, unsigned int number);
+
+/**
+* @brief print on terminal a set of charathers
+* @return number of bytes/char printed
+*/
+int		ft_fprint_pointer(int fd, void *pointer);
+
+/**
+* @brief print on terminal a hexadecimal number
+* @return number of bytes/char printed
+*/
+int		ft_fprint_x(int fd, unsigned int number, char specifier);
 
 #endif

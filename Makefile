@@ -6,7 +6,7 @@
 #    By: eryudi-m <eryudi-m@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/07 00:10:26 by eryudi-m          #+#    #+#              #
-#    Updated: 2022/09/11 19:32:56 by eryudi-m         ###   ########.fr        #
+#    Updated: 2022/12/04 00:03:50 by eryudi-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,19 +23,26 @@ ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
 ft_strmapi.c ft_striteri.c \
 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 get_next_line.c \
-ft_len_unsigned.c ft_itoa_base.c ft_printf.c ft_print_char.c \
-ft_print_string.c ft_print_integer.c ft_print_unsigned_int.c \
-ft_print_pointer.c ft_print_x.c
+ft_len_unsigned.c ft_itoa_base.c \
+ft_printf.c ft_print_char.c ft_print_string.c ft_print_integer.c \
+ft_print_unsigned_int.c ft_print_pointer.c ft_print_x.c ft_putnbr_unsig.c \
+ft_fprintf.c ft_fprint_char.c ft_fprint_string.c ft_fprint_integer.c \
+ft_fprint_unsigned_int.c ft_fprint_pointer.c ft_fprint_x.c ft_fputnbr_unsig.c \
 
-OBJ = $(SRC:.c=.o)
+
+HEADER_PATH = ../inc/
+OBJ = $(patsubst %.c, %.o, $(SRC))
 
 FLAGS = -Wall -Wextra -Werror
 
-CC = gcc $(FLAGS) -c
+CC = clang $(FLAGS)
 
 all: $(NAME)
 $(NAME): $(OBJ)
-	ar rc libft.a $(OBJ)
+	@ar -rcs libft.a $(OBJ)
+
+%.o : %.c $(HEADER_PATH)*.h
+	@$(CC) -c $< -I $(HEADER_PATH)  -o $@
 
 clean:
 	@/bin/rm -f $(OBJ)
@@ -44,3 +51,5 @@ fclean: clean
 	@/bin/rm -f $(NAME)
 
 re: fclean all
+
+.PHONY:	all clean fclean re

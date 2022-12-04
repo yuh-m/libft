@@ -6,7 +6,7 @@
 /*   By: eryudi-m <eryudi-m@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 23:57:49 by eryudi-m          #+#    #+#             */
-/*   Updated: 2022/12/04 00:04:41 by eryudi-m         ###   ########.fr       */
+/*   Updated: 2022/12/04 00:07:01 by eryudi-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -453,7 +453,7 @@ int		ft_fprint_string(int fd, char *chr);
 * @brief print on terminal a set of charathers
 * @return number of bytes/char printed
 */
-int		ft_fprint_integer(int number);
+int		ft_fprint_integer(int fd, int number);
 
 /**
 * @brief print on terminal a set of charathers

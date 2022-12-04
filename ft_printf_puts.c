@@ -6,11 +6,11 @@
 /*   By: eryudi-m <eryudi-m@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 12:39:38 by eryudi-m          #+#    #+#             */
-/*   Updated: 2022/08/06 21:25:53 by eryudi-m         ###   ########.fr       */
+/*   Updated: 2022/12/04 00:18:34 by eryudi-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ft_printf.h"
+#include "libft.h"
 
 void	ft_putchar_fd(const char chr, int fd)
 {

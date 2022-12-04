@@ -6,7 +6,7 @@
 #    By: eryudi-m <eryudi-m@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/07 00:10:26 by eryudi-m          #+#    #+#              #
-#    Updated: 2022/12/04 00:03:50 by eryudi-m         ###   ########.fr        #
+#    Updated: 2022/12/04 00:17:49 by eryudi-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,8 +26,7 @@ get_next_line.c \
 ft_len_unsigned.c ft_itoa_base.c \
 ft_printf.c ft_print_char.c ft_print_string.c ft_print_integer.c \
 ft_print_unsigned_int.c ft_print_pointer.c ft_print_x.c ft_putnbr_unsig.c \
-ft_fprintf.c ft_fprint_char.c ft_fprint_string.c ft_fprint_integer.c \
-ft_fprint_unsigned_int.c ft_fprint_pointer.c ft_fprint_x.c ft_fputnbr_unsig.c \
+ft_fprintf.c 
 
 
 HEADER_PATH = ../inc/
